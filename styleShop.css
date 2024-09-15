@@ -18,6 +18,7 @@
     width: 100%;
 }
 
+
 .shopbackground-container::before {
     content: "";
     position: absolute;
