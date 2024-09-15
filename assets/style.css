@@ -65,14 +65,17 @@ h5 {
 }
 
 .banner-right {
-    width: 50%;
+    width: 40%;
     border-radius: 100px 100px 0 0;
     background-color: #ffc56b;
+    float: right;
+    
 }
 
 .banner-left {
-    width: 50%;
+    width: 30%;
     padding-left: 20px;
+    padding-right: 20px;
 }
 
 .service-section {
