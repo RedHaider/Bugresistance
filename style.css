@@ -705,3 +705,7 @@ h4.text-center {
   text-align: center;         /* Centers the heading */
   width: 100%;
 }
+
+.eit-button-footer{
+  background-color: rgb(255, 89, 89);
+}
