@@ -76,7 +76,7 @@ h5 {
 }
 
 .service-section {
-    background-color: #003a6f;
+    background: #5C2CC5;
 }
 
 .text-color {
@@ -87,9 +87,7 @@ h5 {
     background-color: #fdecd1;
 }
 
-.service-rate {
-    background-color: #003a6f;
-}
+
 
 .hire-section {
     background-color: #fdecd1;
@@ -99,9 +97,7 @@ h5 {
     display: flex;
 }
 
-.contact {
-    background-color: #003a6f;
-}
+
 
 .contact-div {
     display: flex;

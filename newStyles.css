@@ -1,3 +1,12 @@
 .eit-button-footer{
     background-color: rgb(255, 89, 89);
+    font-weight: 700;
+    color: aliceblue;
+    font-size: 20px;
+  }
+  .eit-button-footer:hover{
+    background-color: rgb(255, 89, 89);
+  }
+  .nav-text-color * {
+    color: white !important;
   }
