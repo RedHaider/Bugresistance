@@ -664,3 +664,44 @@
     padding-right: 0%;
   }
 }
+
+.card-border-fth{
+  margin-bottom: 10px;
+}
+
+.course-picture{
+  width: 80%;
+  border-radius: 15px;
+}
+.course-details-card-size {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* Centers content vertically */
+  align-items: center;       /* Centers content horizontally */
+  height: 100%;              /* Ensures the card takes the full height */
+  width: 100%;               /* Ensures the card takes the full width */
+  text-align: center;        /* Center align text content */
+}
+
+.carousel-inner {
+  max-width: 800px;          /* Optional: Limit the width of the carousel for better control */
+  margin: 0 auto;            /* Horizontally center the carousel */
+}
+
+.carousel-item {
+  padding: 15px;             /* Adds padding to the carousel items for better readability */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;                 /* Adjust the size of the carousel controls */
+}
+
+.carousel-indicators {
+  justify-content: center;    /* Center the indicators at the bottom */
+}
+
+h4.text-center {
+  text-align: center;         /* Centers the heading */
+  width: 100%;
+}
