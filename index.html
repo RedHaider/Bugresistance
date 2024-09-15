@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home | QA Harbor Limited</title>
+    <title>Bug Resistance</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/style.css">
@@ -367,21 +367,78 @@
         <h1 class="text-center text-color "><b>Schedule Your Consultation</b></h1>
     </div>
     <section>
-
-        <div>
-            <div class="d-flex justify-content-center align-items-center" style="height: 100vh; background-color: #f8f9fa;">
-
-                <div>
-                    <img src="./assets/EIT.png" class="img-fluid mb-3" alt="Company Logo" style="width: 150px;">
-                    <h4>QA Harbor Limited</h4>
+        <div class="container my-5">
+            <div class="row shadow-lg p-5 bg-white">
+                <!-- Left Section with Company Info -->
+                <div class="col-md-4 text-center border-end">
+                    <img src="./img/EIT.png" alt="Company Logo" class="img-fluid mb-4" style="max-width: 150px;">
+                    <h3 class="fw-bold">Essential Infotech</h3>
                 </div>
-                <div>
-                
+
+                <!-- Right Section with Booking Form -->
+                <div class="col-md-8">
+                    <!-- <h2 class="text-center text-primary">Schedule Your Consultation</h2> -->
+                    <form id="booking-form" action="/book" method="POST" class="mt-4">
+                        <!-- Fixed Service -->
+                        <div class="mb-3">
+                            <label for="service" class="form-label">Service:</label>
+                            <div class="form-control" readonly>40 Mins Meeting | 40 mins</div>
+                            <input type="hidden" id="service" name="service" value="40mins">
+                        </div>
+
+                        <!-- Date Picker -->
+                        <div class="mb-3">
+                            <label for="datetime" class="form-label">Choose Date:</label>
+                            <input type="text" id="datetime" name="datetime" class="form-control"
+                                placeholder="Select a date" required>
+                        </div>
+
+                        <!-- Time Slots -->
+                        <div class="mb-3">
+                            <label for="timeslot" class="form-label">Pick a Time Slot:</label>
+                            <div class="row gx-2 gy-2">
+                                <div class="col-4">
+                                    <button type="button" class="btn btn-outline-primary w-100 timeslot"
+                                        data-time="10:00 am">10:00 AM</button>
+                                </div>
+                                <div class="col-4">
+                                    <button type="button" class="btn btn-outline-primary w-100 timeslot"
+                                        data-time="11:00 am">11:00 AM</button>
+                                </div>
+                                <div class="col-4">
+                                    <button type="button" class="btn btn-outline-primary w-100 timeslot"
+                                        data-time="12:00 pm">12:00 PM</button>
+                                </div>
+                                <div class="col-4">
+                                    <button type="button" class="btn btn-outline-primary w-100 timeslot"
+                                        data-time="01:00 pm">01:00 PM</button>
+                                </div>
+                                <div class="col-4">
+                                    <button type="button" class="btn btn-outline-primary w-100 timeslot"
+                                        data-time="02:00 pm">02:00 PM</button>
+                                </div>
+                                <div class="col-4">
+                                    <button type="button" class="btn btn-outline-primary w-100 timeslot"
+                                        data-time="03:00 pm">03:00 PM</button>
+                                </div>
+                                <div class="col-4">
+                                    <button type="button" class="btn btn-outline-primary w-100 timeslot"
+                                        data-time="04:00 pm">04:00 PM</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Hidden input to store selected time -->
+                        <input type="hidden" id="selectedTime" name="selectedTime">
+
+                        <!-- Submit Button -->
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary btn-lg">Book Now</button>
+                        </div>
+                    </form>
                 </div>
             </div>
-
         </div>
-
     </section>
 
     <!-- 9. bad -->
@@ -477,7 +534,7 @@
                 <div class="row">
                     <div class="col-md-7">
                         <p class="text-danger pt-5"><b>Future-Proof Your Software</b></p>
-                        <h1 class="text-color "><b>QA Harbor's Gift to You <br>a Free QA Consultation!</b></h1>
+                        <h1 class="text-color "><b> Gift to You <br>a Free QA Consultation!</b></h1>
                         <form class="p-5">
                             <div class="mb-3">
                                 <label class="form-label">Your Name</label>
@@ -505,10 +562,10 @@
                         <!-- card -->
                         <div class="card mb-4 p-3" style="background-color: #ffe4e6; border-radius: 10px;">
                             <div class="d-flex align-items-center">
-                                <img src="./assets/Masudur-Rahaman.png" alt="Masudur Rahaman"
+                                <img src="./assets/card-2.png" alt="Masudur Rahaman"
                                     class="rounded-circle border border-primary" style="width: 80px; height: 80px;">
                                 <div class="ms-3">
-                                    <h5 class="mb-0">Masudur Rahaman</h5>
+                                    <h5 class="mb-0">Lorem, ipsum dolor.</h5>
                                     <p class="text-muted mb-0">Managing Director</p>
                                 </div>
                             </div>
@@ -516,10 +573,10 @@
                         <!-- card -->
                         <div class="card rounded p-3 mb-4" style="background-color: #d5ebff;">
                             <div class="d-flex ">
-                                <img src="./assets/Farzam-Aidelkhani.png" alt=""
+                                <img src="./assets/card-2.png" alt=""
                                     class="rounded-circle border border-primary" style="width: 80px; height: 80px;">
                                 <div class="ms-3">
-                                    <h5>Farzam Aidelkhani</h5>
+                                    <h5>Lorem, ipsum dolor.</h5>
                                     <p class="text-muted">Biz & Sales Lead</p>
                                 </div>
                             </div>
@@ -527,10 +584,10 @@
                         <!-- card -->
                         <div class="card rounded p-3 " style="background-color: #d5ebff;">
                             <div class="d-flex ">
-                                <img src="./assets/Zabir-Ibne-Mizan.png" alt=""
+                                <img src="./assets/card-2.png" alt=""
                                     class="rounded-circle border border-primary" style="width: 80px; height: 80px;">
                                 <div class="ms-3">
-                                    <h5>Zabir Ibne Mizan</h5>
+                                    <h5>Lorem, ipsum dolor.</h5>
                                     <p class="text-muted">Business Analyst</p>
                                 </div>
                             </div>
@@ -550,13 +607,10 @@
                 <div class="border-0 card" style="background-color: #003a6f;">
                     <img src="./assets/EIT.png" alt="" class="w-50">
                     <div class="card-body">
-                        <p class="card-text text-light">QA Harbor Limited is a Quality Assurance Service Provider,
-                            highly
-                            driven in the software and service quality assurance arena.</p>
-                        <a class="text-light fw-bold text-decoration-non"
-                            href="https://www.google.com/maps/place/QA+Harbor+Limited/@23.7788759,90.394767,15z/data=!4m6!3m5!1s0x3755c7ed6d2d78b7:0xf665cfaf10fa16bd!8m2!3d23.7788759!4d90.394767!16s%2Fg%2F11j01j75p1?entry=ttu&g_ep=EgoyMDI0MDkwNC4wIKXMDSoASAFQAw%3D%3D">House
-                            #470, Road #31, Mohakhali DOHS, Dhaka-1212</a>
-                        <p class="text-light fw-bold">+880 1777 223 622 <br>+880 1618 938 828</p>
+                        <p class="card-text text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. .</p>
+                           <a class="text-light fw-bold text-decoration-non">House
+                            Super House, Gareeb-e-Nawaz Ave, Dhaka 1230</a>
+                        <p class="text-light fw-bold">+01676-053114 </p>
                     </div>
                 </div>
 
@@ -576,7 +630,6 @@
                         <a class="text-decoration-none fw-bold text-light" href="#"> > Terms & Conditions </a><br>
                         <a class="text-decoration-none fw-bold text-light" href="#"> > Ongoing Campaign</a><br>
                         <a class="text-decoration-none fw-bold text-light" href="#"> > Blog</a><br>
-                        <a class="text-decoration-none fw-bold text-light" href="#"> > Find QA Jobs</a>
                     </div>
                 </div>
 
@@ -610,7 +663,7 @@
             <div class="text-light">
                 <hr>
             </div>
-            <p class="text-center text-light">©2024 – QA Harbor Limited</p>
+            <p class="text-center text-light">©2024 – Bug Resistance</p>
         </div>
     </section>
 
@@ -620,6 +673,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 </body>
 
 </html>
