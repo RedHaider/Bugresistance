@@ -66,4 +66,21 @@
     color: #020570;
   }
 
-  
+  /* need to work on it */
+
+  /* Remove the focus outline and border for the input field */
+.form-control:focus {
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.input-group .form-control {
+  border: none;
+}
+
+/* Justify content inside the input group */
+.input-group {
+  justify-content: space-between;
+}
+
+
