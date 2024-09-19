@@ -466,3 +466,9 @@
 .blog-footer-header-two{
   font-family: Poppins;font-size: 20px;font-weight: 500;line-height: 30px;text-align:left;color: #FFFFFF;
 }
+
+.icon-radius-bug{
+  border-top-left-radius:  0%;
+  border-bottom-left-radius: 0%;
+  
+}
