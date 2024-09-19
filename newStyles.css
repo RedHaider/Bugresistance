@@ -438,3 +438,31 @@
   border-radius: 5px;
 
 }
+
+.blog-footer-bug-resistance{
+  color: #F23460;
+  font-family: Poppins;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+.blog-footer-text-design{
+  font-family: Poppins;font-size: 16px;font-weight: 400;line-height: 24px;text-align: left;color: #FFFFFF;
+}
+
+.btn-default{
+  background: #F23460;
+}
+
+.blog-footer-email{
+  font-family: Poppins;font-size: 20px;font-weight: 500;line-height: 30px;text-align: left;color:  #FFFFFF;
+}
+
+.blog-footer-text-design-one{
+  font-family: Poppins;font-size: 13px;font-weight: 400;line-height: 24px;text-align: left;color: #FFFFFF;
+}
+
+.blog-footer-header-two{
+  font-family: Poppins;font-size: 20px;font-weight: 500;line-height: 30px;text-align:left;color: #FFFFFF;
+}
